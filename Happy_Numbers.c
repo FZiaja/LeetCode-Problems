@@ -35,7 +35,7 @@ Suppose n has 1,000,000 digits, and let n1 be its square-sum. then n1 is at most
 Since n1 has at most 8 digits, its square-sum n2, is at most 8*81 = 648.
 Since n2 has at most 3 digits, its square-sum is at most 324.
 
-It is easy to see that given any integer n, if we repeat the process of replacing n with its square-sum, then n 
+It is easy to see that given any positive integer n, if we repeat the process of replacing n with its square-sum, then n 
 will eventually become less than or equal to 324, after which it will always stay within that range.
 
 After realizing this, I wrote some code to produce sequences of square-sums for all numbers from 1 to 324, and 
