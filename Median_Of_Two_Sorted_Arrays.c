@@ -6,7 +6,9 @@ There are two sorted arrays nums1 and nums2 of size m and n respectively. Find t
 Theory and Explanation
 =========================
 
-Main Observation #1: Suppose we have a set S of numbers and a positive integer k. Then removing the k smallest elements and the k largest elements from S will not change the median, provided that k is small enough so that the median element(s) is not removed from S.
+We will use the term 'median element(s)' to refer to the element(s) that comprise(s) the median of an array. For example, in the array {1, 2, 3, 4}, the median is 2.5, and the median elements are 2 and 3. In the array {1, 2, 3, 4, 5}, the median is 3 and the median element is also 3. 
+
+Main Observation #1: Suppose we have a list L of numbers, sorted in ascending order. Let k be a positive integer that is less than half the length of L. If we remove any k elements from the left of the median element(s), and any k elements from the right of the median median element(s), then the median of L will remain unchanged.
 
 ---------------------------------
 
